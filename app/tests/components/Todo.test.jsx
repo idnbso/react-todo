@@ -12,13 +12,13 @@ describe('Todo', () => {
     });
 
     it('should call onToggle prop with id on click', () => {
-        const todoData = {
+        let todoData = {
             id: 199,
             text: 'Write todo.test.jsx test',
             completed: true
         };
 
-        const spy = expect.createSpy();
+        let spy = expect.createSpy();
         let todo = TestUtils.renderIntoDocument(<Todo {...todoData} onToggle={spy}/>);
         let $el = $(ReactDOM.findDOMNode(todo));
 

@@ -22,7 +22,7 @@ describe('TodoApp', () => {
     });
 
     it('should toggle completed value when handleToggle is called', () => {
-        const todoData = {
+        let todoData = {
             id: 11,
             text: 'Test features',
             completed: false
