@@ -23,7 +23,7 @@ let Todo = React.createClass({
                 this.props.onToggle(id);
             }}>
                 <div>
-                    <input type="checkbox" defaultChecked={completed}/>&nbsp;
+                    <input type="checkbox" checked={completed}/>&nbsp;
                 </div>
                 <div>
                     <p>{text}</p>
